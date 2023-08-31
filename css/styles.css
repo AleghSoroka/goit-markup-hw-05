@@ -303,9 +303,18 @@ img {
 .footer-box-3 {
 }
 
+.footer-box-label {
+  color: var(--white);
+  display: block;
+  margin-bottom: 16px;
+}
+
 .footer-form {
+  /* display: block; */
+}
+
+.footer-form-wrapper {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 24px;
@@ -336,6 +345,7 @@ img {
 
 .footer-form-btn {
   padding: 8px 24px;
+  min-width: 165px;
 }
 
 .footer-form-btn-icon {
@@ -795,7 +805,7 @@ img {
 .user-form-input:focus + .modal-input-icon {
   fill: var(--iris);
 }
-/* Error message effect */
+/* Error message effect
 .user-form-input:not(:placeholder-shown):invalid:required {
   border-color: var(--error);
   color: var(--error);
@@ -803,7 +813,8 @@ img {
 
 .user-form-input:not(:placeholder-shown):invalid:required + .modal-input-icon {
   fill: var(--error);
-}
+} */
+/* Error message effect */
 
 .input-size {
   height: 40px;
