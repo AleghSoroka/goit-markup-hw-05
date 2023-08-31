@@ -11,6 +11,7 @@
   --grey: #2e2f42;
   --white: #ffffff;
   --dairy: #fcfcfc;
+  --error: rgb(224, 15, 15);
 
   /* Animation effects */
   --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -585,7 +586,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin: 0 156px; */
   gap: 24px;
 }
 
@@ -729,11 +729,15 @@ img {
 }
 
 .user-comment {
-  padding: 8px;
+  display: block;
+  margin-bottom: 16px;
+  padding: 8px 16px;
   resize: none;
 }
 
 .modal-caption {
+  display: block;
+  margin-bottom: 16px;
   color: var(--navy-blue);
   font-size: 16px;
   font-weight: 500;
@@ -743,22 +747,29 @@ img {
 }
 
 .modal-form-label {
+  display: flex;
+  align-items: center;
+  position: relative;
   color: var(--light-slate);
   font-size: 12px;
-  font-weight: 400;
   line-height: 1.17em;
   letter-spacing: 0.04em;
-  text-align: left;
 }
 
 .modal-form-field {
+  margin-bottom: 8px;
   position: relative;
 }
 
 .modal-input-icon {
   position: absolute;
-  top: 8px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 16px;
+  width: 18px;
+  height: 18px;
+  /* To not allow a click upon an icon */
+  pointer-events: none;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -784,19 +795,60 @@ img {
 .user-form-input:focus + .modal-input-icon {
   fill: var(--iris);
 }
+/* Error message effect */
+.user-form-input:not(:placeholder-shown):invalid:required {
+  border-color: var(--error);
+  color: var(--error);
+}
+
+.user-form-input:not(:placeholder-shown):invalid:required + .modal-input-icon {
+  fill: var(--error);
+}
 
 .input-size {
   height: 40px;
-  padding: 8px 8px 8px 38px;
+  padding: 8px 16px 8px 38px;
 }
 
 .user-form-input::placeholder {
   color: var(--light-slate);
 }
 
-.modal-input-icon {
-  width: 18px;
-  height: 18px;
+.agreement-checkbox {
+  position: absolute;
+  top: -1;
+  left: 0;
+  display: inline-flex;
+  justify-items: center;
+  align-items: center;
+  color: transparent;
+}
+
+.modal-form-agreement-text {
+  margin-left: 24px;
+}
+
+.checkbox:checked + .agreement-checkbox {
+  color: var(--cloud);
+  background-color: var(--ocean);
+  border-radius: 2px;
+}
+
+.agreement-checkbox-icon {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+
+  border: 1px solid var(--navy-blue-modal);
+  fill: currentColor;
+}
+
+.user-agreement-link {
+  color: var(--iris);
+}
+
+.modal-form-btn {
+  margin-top: 24px;
 }
 
 .backdrop.is-hidden {

@@ -653,6 +653,9 @@
               id="user-name"
               type="text"
               name="user_name"
+              placeholder=" "
+              required
+              minlength="3"
             />
             <svg class="modal-input-icon">
               <use href="./images/icons.svg#icon-person"></use>
@@ -666,6 +669,10 @@
               id="user-phone"
               type="tel"
               name="user_phone"
+              placeholder=" "
+              required
+              minlength="12"
+              maxlength="12"
             />
             <svg class="modal-input-icon">
               <use href="./images/icons.svg#icon-phone"></use>
@@ -680,6 +687,8 @@
               id="user-email"
               type="email"
               name="user_email"
+              placeholder=" "
+              required
             />
             <svg class="modal-input-icon">
               <use href="./images/icons.svg#icon-email"></use>
@@ -695,22 +704,28 @@
               id="user-form-comment"
               rows="7"
               placeholder="Text input"
+              required
             ></textarea>
           </div>
 
           <!-- User agreement -->
           <label for="user-agreement" class="modal-form-label"
             ><input
-              class="user-form-input visually-hidden"
+              class="checkbox visually-hidden"
               id="user-agreement"
               type="checkbox"
               name="user_agreement"
               value="yes"
-            /><span class="modal-form-agreement-text"
+            /><span class="agreement-checkbox">
+              <svg class="agreement-checkbox-icon">
+                <use
+                  href="./images/icons.svg#icon-checkbox-symbol"
+                ></use></svg></span
+            ><span class="modal-form-agreement-text"
               >I accept the terms and conditions of the
               <a
                 href=""
-                class=""
+                class="user-agreement-link"
                 aria-label="User agreement"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -720,7 +735,11 @@
           >
 
           <!-- Form Send button -->
-          <button class="order-btn button" type="submit" name="modal_form_btn">
+          <button
+            class="order-btn button modal-form-btn"
+            type="submit"
+            name="modal_form_btn"
+          >
             Send
           </button>
         </form>
