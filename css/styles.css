@@ -310,7 +310,8 @@ img {
 }
 
 .footer-form {
-  /* display: block; */
+  display: flex;
+  gap: 24px;
 }
 
 .footer-form-wrapper {
