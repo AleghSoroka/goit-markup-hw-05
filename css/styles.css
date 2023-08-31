@@ -760,6 +760,11 @@ img {
   text-align: center;
 }
 
+.modal-form-field {
+  margin-bottom: 16px;
+  position: relative;
+}
+
 .modal-form-label {
   display: block;
   margin-bottom: 4px;
@@ -768,11 +773,6 @@ img {
   font-size: 12px;
   line-height: 1.17em;
   letter-spacing: 0.04em;
-}
-
-.modal-form-field {
-  margin-bottom: 8px;
-  position: relative;
 }
 
 .modal-input-icon {
