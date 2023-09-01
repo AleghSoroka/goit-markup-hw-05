@@ -837,9 +837,9 @@ img {
 }
 
 .checkbox:checked + .modal-form-label > .agreement-checkbox {
-  fill: #e7e9fc;
+  fill: var(--cloud);
   background-color: var(--ocean);
-  border-color: transparent;
+  border: none;
 }
 
 .agreement-checkbox {
