@@ -707,30 +707,33 @@
             ></textarea>
           </div>
           <!-- User agreement -->
-          <label for="user-agreement" class="modal-form-label"
-            ><input
+
+          <div class="user-agreement-wrapper">
+            <input
               class="checkbox visually-hidden"
-              id="user-agreement"
+              id="user-privacy"
               type="checkbox"
               name="user-agreement"
-              value="yes"
-            /><span class="agreement-checkbox">
-              <svg class="agreement-checkbox-icon">
-                <use
-                  href="./images/icons.svg#icon-checkbox-symbol"
-                ></use></svg></span
-            ><span class="modal-form-agreement-text"
-              >I accept the terms and conditions of the
-              <a
-                href=""
-                class="user-agreement-link"
-                aria-label="User agreement"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Privacy Policy</a
-              ></span
-            ></label
-          >
+              value="true"
+            /><label for="user-privacy" class="modal-form-label">
+              <span class="agreement-checkbox">
+                <svg class="agreement-checkbox-icon">
+                  <use
+                    href="./images/icons.svg#icon-checkbox-symbol"
+                  ></use></svg></span
+              ><span class="modal-form-agreement-text"
+                >I accept the terms and conditions of the
+                <a
+                  href=""
+                  class="user-agreement-link"
+                  aria-label="User agreement"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Privacy Policy</a
+                ></span
+              ></label
+            >
+          </div>
           <!-- Form Send button -->
           <button
             class="order-btn button modal-form-btn"

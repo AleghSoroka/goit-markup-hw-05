@@ -747,6 +747,8 @@ img {
   margin-bottom: 16px;
   padding: 8px 16px;
   resize: none;
+  height: 120px;
+  color: rgba(46, 47, 66, 0.4);
 }
 
 .modal-caption {
