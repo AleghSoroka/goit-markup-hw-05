@@ -738,6 +738,8 @@ img {
 }
 
 .modal-form-input-group {
+  /* LMS insisted */
+  margin-bottom: 8px;
 }
 
 .user-comment {
@@ -750,7 +752,7 @@ img {
 }
 
 .user-agreement-wrapper {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .modal-caption {
