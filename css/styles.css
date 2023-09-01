@@ -196,7 +196,7 @@ img {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5em;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02em;on
   text-align: left;
   color: var(--slate);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -211,7 +211,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* gap: 16px; */
   text-align: center;
   font-family: Roboto, sans-serif;
   font-size: 16px;
@@ -739,7 +738,7 @@ img {
 }
 
 .modal-form-input-group {
-  margin-bottom: 8px;
+
 }
 
 .user-comment {
@@ -767,7 +766,7 @@ img {
 }
 
 .modal-form-field {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   position: relative;
 }
 
@@ -780,14 +779,20 @@ img {
   line-height: 1.17em;
   letter-spacing: 0.04em;
 }
+.user-privacy-label {
+  display: block;
+  position: relative;
+  color: var(--light-slate);
+  font-size: 12px;
+  line-height: 1.17em;
+  letter-spacing: 0.04em;
+}
 
 .modal-input-icon {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 16px;
-  /* width: 18px;
-  height: 18px; */
   /* To not allow a click upon an icon */
   pointer-events: none;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -863,7 +868,8 @@ img {
 }
 
 .modal-form-btn {
-  margin-top: 24px;
+
+
   min-width: 169px;
 }
 
@@ -889,4 +895,7 @@ img {
 .application-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.user_contacts_form {
+
 }
