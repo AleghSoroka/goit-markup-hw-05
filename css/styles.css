@@ -794,7 +794,8 @@ img {
 }
 
 .user-form-input {
-  color: var(--navy-blue);
+  /* color: var(--navy-blue); */
+  color: rgba(46, 47, 66, 0.4);
   font-size: 12px;
   font-weight: 400;
   line-height: 1.17em;
@@ -841,43 +842,36 @@ img {
   justify-content: center;
   align-items: center;
   fill: transparent;
+  width: 16px;
+  height: 16px;
 
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  position: absolute;
-  top: -1;
-  left: 0;
-  display: inline-flex;
-  justify-items: center;
-  align-items: center;
-  color: transparent;
 }
 
-.checkbox:checked + .agreement-checkbox {
+input[type='checkbox']:checked + .agreement-checkbox {
   color: var(--cloud);
   background-color: var(--ocean);
   border-radius: 2px;
 }
-
-.agreement-checkbox-icon {
-  width: 10px;
-  height: 8px;
-  border-radius: 2px;
-
-  border: 1px solid var(--navy-blue-modal);
-  fill: currentColor;
+/* /////// */
+/* .agreement-checkbox {
+  background-color: var(--ocean);
 }
-
+.agreement-checkbox-icon {
+  fill: #e7e9fc;
+} */
+/* ///// */
 .user-agreement-link {
   color: var(--iris);
 }
 
 .modal-form-btn {
   margin-top: 24px;
+  min-width: 169px;
 }
 
 .backdrop.is-hidden {
