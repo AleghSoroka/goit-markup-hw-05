@@ -737,22 +737,25 @@ img {
   fill: var(--white);
 }
 
-.modal-form-input-group {
-  /* LMS insisted */
+.modal-form-input {
   margin-bottom: 8px;
 }
 
-.user-comment {
+.modal-form-comments {
+  margin-bottom: 16px;
+}
+
+.modal-form-agreement {
+  margin-bottom: 24px;
+}
+
+.comment-size {
   display: block;
   margin-bottom: 16px;
   padding: 8px 16px;
   resize: none;
   height: 120px;
   color: rgba(46, 47, 66, 0.4);
-}
-
-.user-agreement-wrapper {
-  margin-bottom: 16px;
 }
 
 .modal-caption {
